@@ -100,6 +100,7 @@ button{
 @media (max-width: 540px){
   .profile {
     max-width: 350px;
+    font-size: 14px;
   }
   button{
     width: 100%;
