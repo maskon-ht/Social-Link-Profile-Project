@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Inter';
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    font-weight: 400;
+}
+body{
+    position: relative;
+    height: 100vh;
+    max-width: 1440px;
+    min-width: 375px;
+    background-color: hsl(0, 0%, 8%);
+}
+.profile{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 12%);
+    width: 375px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Profile Image */
+.pic_profile{
+    margin-bottom: 20px;
+}
+.pic_profile img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Coordonnees */
+.coord >*{
+    margin-top: 10px;
+}
+#name{
+    font-size: 25px;
+    font-weight: 600;
+}
+#location_text{
+    margin-bottom: 20px;
+    color: hsl(75, 94%, 57%);
+}
+
+/* Buttons */
+.social_link{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+button{
+    height: 40px;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
