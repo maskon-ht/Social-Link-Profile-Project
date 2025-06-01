@@ -46,11 +46,11 @@ body {
 .coord >*{
     margin-top: 10px;
 }
-#name{
+.name{
     font-size: 32px;
     font-weight: 600;
 }
-#location_text{
+.location_text{
     margin-bottom: 20px;
     color: hsl(75, 94%, 57%);
 }
