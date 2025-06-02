@@ -4,17 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color:hsl(0, 0%, 100%);
     text-align: center;
     font-weight: 400;
 }
 
+html{
+    font-size: 18px;
+}
+
 body {
+    width: 100vw;
     max-width: 1440px;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
     background-color: hsl(0, 0%, 8%);
+    font-size: 1rem;
 }
 .profile {
   position: absolute;
@@ -23,21 +28,19 @@ body {
   transform: translate(-50%, -50%);
   height: fit-content;
   background-color: hsl(0, 0%, 12%);
-  width: 90%;
-  max-width: 500px;
-  padding: 40px;
-  border-radius: 10px;
-  font-size: 18px;
+  width: 100%;
+  max-width: 60vh;
+  padding: 4rem 1rem;
+  border-radius: 0.6;
 }
-
 
 /* Profile Image */
 .pic_profile{
     margin-bottom: 20px;
 }
 .pic_profile img{
-  width: 150px;
-  height: 150px;
+  width: 30%;
+  height: 30%;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -47,11 +50,11 @@ body {
     margin-top: 10px;
 }
 .name{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
 }
 .location_text{
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     color: hsl(75, 94%, 57%);
 }
 
@@ -70,10 +73,11 @@ button{
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1rem;
     width: 80%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+/* Hover effect */
 button:hover{
     background-color: hsl(75, 94%, 57%);
     transform: scale(1.05);
@@ -88,30 +92,28 @@ a{
 
 @media (max-width: 768px) {
   .profile {
-    width: 90%;
-    padding: 40px;
+    max-width: 60vh;
     border-radius: 10px;
   }
   button {
-    height: 50px;
+    height: 2.5rem;
     width: 80%;
-    font-size: 16px;
   }
 }
 
 @media (max-width: 615px) {
   .profile {
-    width: 100%;
+    width: 80vh;
   }
 }
 
 @media (max-width: 540px){
   .profile {
-    max-width: 350px;
     font-size: 14px;
+    width: 50vh;
   }
   button{
-    width: 100%;
-    height: 40px;
+    height: 2rem;
+    font-size: 0.8rem;
   }
 }
